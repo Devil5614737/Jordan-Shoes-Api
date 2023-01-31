@@ -1,19 +1,26 @@
-"use strict";
-exports.__esModule = true;
-var express = require("express");
-var cors = require("cors");
-var data_1 = require("./data");
-var app = express();
+const express=require('express')
+const cors=require('cors')
+const app=express();
+const data=require('./data')
+
 app.use(cors());
+
 app.use(express.json());
-app.get("/shoes", function (req, res) {
-    return res.status(200).json(data_1.data);
+
+app.get("/shoes", (req, res) => {
+  return res.status(200).json(data);
 });
-app.get("/shoes/:id", function (req, res) {
-    var shoeId = req.params.id.toString();
-    var shoe = data_1.data.find(function (shoe) { return shoe.id.toString() === shoeId; });
+
+app.get("/shoes/:id", (req, res) => {
+  const shoeId = req.params.id.toString();
+  const shoe = data.find((shoe) => shoe.id.toString() === shoeId);
+  if(shoe){
     return res.status(200).json(shoe);
+  }else{
+    return res.status(400).json('not found')
+  }
 });
-app.listen(4000, function () {
-    console.log("Listening on port 4000");
+
+app.listen(4000, () => {
+  console.log("Listening on port 4000");
 });
