@@ -1,3 +1,5 @@
+const slugify=require('slugify')
+
 module.exports= data = [
     {
       id: 1,
@@ -6,6 +8,7 @@ module.exports= data = [
       price: 400,
       color: "blue",
       quantity:1,
+      slug:slugify("Air Jordan 2 Retro Balvin",{lower:true}),
       thumbnails: [
         {
           id: 1,
@@ -145,6 +148,7 @@ module.exports= data = [
       price: 300,
       color: "red",
       quantity:1,
+        slug:slugify("Air Jordan 7 Retro SP",{lower:true}),
       thumbnails: [
         {
           id: 1,
@@ -285,6 +289,7 @@ module.exports= data = [
       price: 500,
       color: "red",
       quantity:1,
+      slug:slugify("Air Jordan 1 Mid SE",{lower:true}),
       thumbnails: [
         {
           id: 1,
@@ -413,6 +418,7 @@ module.exports= data = [
       price: 200,
       color: "black",
       quantity:1,
+      slug:slugify("Air Jordan 6 Retro",{lower:true}),
       thumbnails: [
         {
           id: 1,
@@ -549,6 +555,7 @@ module.exports= data = [
       price: 300,
       color: "red",
       quantity:1,
+      slug:slugify("Air Jordan XXXVII Rui",{lower:true}),
       thumbnails: [
         {
           id: 1,
@@ -689,6 +696,7 @@ module.exports= data = [
       price: 350,
       color: "red",
       quantity:1,
+      slug:slugify("Luka 1 PF",{lower:true}),
       thumbnails: [
         {
           id: 1,
@@ -829,6 +837,7 @@ module.exports= data = [
       price: 550,
       color: "blue",
       quantity:1,
+      slug:slugify("Luka 1 PF 2",{lower:true}),
       thumbnails: [
         {
           id: 1,
@@ -969,6 +978,7 @@ module.exports= data = [
       price: 650,
       color: "blue",
       quantity:1,
+      slug:slugify("Air Jordan Legacy 312",{lower:true}),
       thumbnails: [
         {
           id: 1,
@@ -1106,6 +1116,7 @@ module.exports= data = [
       price: 250,
       color: "black",
       quantity:1,
+      slug:slugify("Jordan Stay Loyal 2",{lower:true}),
       thumbnails: [
         {
           id: 1,
@@ -1236,6 +1247,7 @@ module.exports= data = [
       price: 650,
       color: "black",
       quantity:1,
+      slug:slugify("Air Jordan XXXVI",{lower:true}),
       thumbnails: [
         {
           id: 1,

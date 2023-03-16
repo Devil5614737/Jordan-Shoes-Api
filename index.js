@@ -1,7 +1,7 @@
-const express=require('express')
-const cors=require('cors')
-const app=express();
-const data=require('./data')
+const express = require("express");
+const cors = require("cors");
+const app = express();
+const data = require("./data");
 
 app.use(cors());
 
@@ -14,10 +14,10 @@ app.get("/shoes", (req, res) => {
 app.get("/shoes/:id", (req, res) => {
   const shoeId = req.params.id.toString();
   const shoe = data.find((shoe) => shoe.id.toString() === shoeId);
-  if(shoe){
+  if (shoe) {
     return res.status(200).json(shoe);
-  }else{
-    return res.status(400).json('not found')
+  } else {
+    return res.status(400).json("not found");
   }
 });
 
