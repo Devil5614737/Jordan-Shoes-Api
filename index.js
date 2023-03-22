@@ -3,8 +3,8 @@ const app = express();
 const data = require("./data");
 const cors = require("cors");
 
-app.use(cors());
 app.use(express.json());
+app.use(cors());
 
 app.get("/shoes", (req, res) => {
   return res.status(200).json(data);
