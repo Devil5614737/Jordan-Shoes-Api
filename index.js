@@ -1,8 +1,9 @@
 const express = require("express");
 const app = express();
 const data = require("./data");
+const cors=require("cors")
 
-
+app.use(cors())
 app.use(express.json());
 
 app.get("/shoes", (req, res) => {
