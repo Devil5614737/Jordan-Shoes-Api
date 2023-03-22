@@ -833,11 +833,11 @@ module.exports= data = [
     {
       id: 7,
       img: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/41e51f2a-7664-4f8b-9608-b047cea21b45/luka-1-pf-basketball-shoes-XTzWkj.png",
-      name: "Luka 1 PF",
+      name: "Luka 2 PF",
       price: 550,
       color: "blue",
       quantity:1,
-      slug:slugify("Luka 1 PF 2",{lower:true}),
+      slug:slugify("Luka 2 PF ",{lower:true}),
       thumbnails: [
         {
           id: 1,
