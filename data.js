@@ -139,7 +139,9 @@ module.exports= data = [
         },
       ],
       product_information:
+      {text:
         "Declaration of Importer: Direct import by the individual customer. Marketed by: Nike Global Trading B.V. Singapore Branch, 30 Pasir Panjang Road, #10-31/32, Mapletree Business City, Singapore 117 440",
+      }
     },
     {
       id: 2,
