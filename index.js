@@ -11,7 +11,7 @@ app.use(cors());
 app.get("/shoes/:slug", (req, res) => {
   const shoeName = slugify(req.params.slug.toLowerCase(), { lower: true });
 
-  const shoe = data.find((shoe) => shoe.slug === shoeName);
+  const shoe = data.find((shoe) => shoe.slug === shoeName || shoe.id===shoeName);
 
   if (shoe) {
     return res.status(200).json(shoe);
